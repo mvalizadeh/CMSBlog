@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Context
 {
-    internal class CMSBlogContext : DbContext
+    public class CMSBlogContext : DbContext
     {
-        DbSet<BlogGroup> BlogGroups { get; set; }
-        DbSet<Blog> Blogs { get; set; }
-        DbSet<BlogComment> Comments { get; set; }
+        public DbSet<BlogGroup> BlogGroups { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
+        public DbSet<BlogComment> Comments { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

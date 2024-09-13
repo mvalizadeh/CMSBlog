@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Models
 {
-    internal class BlogGroup
+    public class BlogGroup
     {
         [Key]
         public int GroupId { get; set; }

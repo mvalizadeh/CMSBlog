@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataLayer.Models
 {
-    internal class BlogComment
+    public class BlogComment
     {
         [Key]
         public int CommentId { get; set; }
